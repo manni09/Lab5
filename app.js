@@ -14,6 +14,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.set('x-powered-by', false);
 app.disable('etag');
+app.set('strict routing', true);
+app.enable('case sensitive routing');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
